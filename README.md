@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Biblioteca Solidária
 
-## Getting Started
+Aplicação web para visualização e empréstimo de livros, promovendo o compartilhamento gratuito de conhecimento entre pessoas. Desenvolvida como parte do mini projeto do Módulo 5 do curso **Programadores do Amanhã**.
 
-First, run the development server:
+🔗 **Deploy:** [biblioteca-solidaria-frontend.vercel.app](https://biblioteca-solidaria-frontend.vercel.app/)
+
+---
+
+## 🚀 Funcionalidades
+
+- 📖 Visualização de livros disponíveis
+- 🖼️ Capas dos livros com fallback de imagem
+- 📝 Formulário para solicitação de empréstimos
+- 📱 Layout responsivo e acessível
+- 🎨 Estilo moderno com Tailwind CSS
+
+---
+
+## 💻 Tecnologias utilizadas
+
+- **[Next.js](https://nextjs.org/)**  
+- **[React](https://reactjs.org/)**  
+- **[TypeScript](https://www.typescriptlang.org/)**  
+- **[Tailwind CSS](https://tailwindcss.com/)**  
+- **[Axios](https://axios-http.com/)**  
+- **[Node.js + Express (backend)](https://expressjs.com/)**
+
+---
+
+## 📦 Estrutura do Projeto
 
 ```bash
+biblioteca-solidaria-frontend/
+├── public/
+│   └── images/
+│       └── capas/
+│       └── imagem-biblioteca-solidaria.png
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── LivrosSection.tsx
+│   │   ├── EmprestimosSection.tsx
+│   │   └── Footer.tsx
+│   ├── services/
+│   │   └── api.ts
+│   ├── styles/
+│   │   └── globals.css
+│   └── types/
+│       └── livros.ts
+├── pages/
+│   └── index.tsx
+├── tailwind.config.js
+└── tsconfig.json
+
+## Como executar o projeto
+
+# Clone o repositório
+git clone https://github.com/seu-usuario/biblioteca-solidaria-frontend.git
+
+# Acesse o diretório
+cd biblioteca-solidaria-frontend
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Certifique-se de que a API Backend esteja rodando em http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Imagem da aplicação
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Biblioteca Solidária - Print da aplicação](./public/images/imagem-biblioteca-solidaria.png)
 
-## Learn More
+## 📌 Melhorias futuras
 
-To learn more about Next.js, take a look at the following resources:
+🔎 Filtro de livros por gênero e autor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📤 Formulário para doação de livros
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+👩‍💼 Tela administrativa para aprovar/gerenciar empréstimos
 
-## Deploy on Vercel
+💾 Persistência dos dados em banco de dados real (PostgreSQL)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👩‍💻 Desenvolvedora
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito por Helen Gonçalves
+Aluna no projeto Programadores do Amanhã
+
