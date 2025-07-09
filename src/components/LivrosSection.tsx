@@ -1,29 +1,29 @@
-import { useState, useEffect } from 'react'
-import { fetchLivros } from '../services/api'
-import { Livro } from '../types/livros'
-import LivroCard from './LivroCard'
+import { useState, useEffect } from "react";
+import { fetchLivros } from "../services/api";
+import { Livro } from "../types/livros";
+import LivroCard from "./LivroCard";
 
-export default function LivrosSection() {
-  const [livros, setLivros] = useState<Livro[]>([])
-  const [loading, setLoading] = useState(true)
+function LivrosSection() {
+  const [livros, setLivros] = useState<Livro[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const data = await fetchLivros()
-        console.log("📚 Livros carregados da API:", data)
-        setLivros(data)
+        const data = await fetchLivros();
+        console.log("Livros carregados da API:", data);
+        setLivros(data);
       } catch (error) {
-        console.error("❌ Erro ao carregar livros:", error)
+        console.error("Erro ao carregar livros:", error);
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
+    };
 
-    loadData()
-  }, [])
+    loadData();
+  }, []);
 
-  if (loading) return <div className="text-center py-8">Carregando livros...</div>
+  if (loading) return <div className="text-center py-8">Carregando livros...</div>;
 
   return (
     <section id="livros" className="py-12 px-4">
@@ -34,5 +34,7 @@ export default function LivrosSection() {
         ))}
       </div>
     </section>
-  )
+  );
 }
+
+export default LivrosSection;

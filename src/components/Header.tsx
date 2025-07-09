@@ -13,7 +13,6 @@ export default function Header() {
         <nav className="space-x-4">
           <a href="#livros" className="hover:underline">Livros</a>
           <a href="#emprestimos" className="hover:underline">Empréstimos</a>
-          <a href="#" className="hover:underline">Doar</a>
         </nav>
     </header>
   )
