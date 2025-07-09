@@ -20,7 +20,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Sobre a Biblioteca Solidária</h2>
         <p className="text-gray-700 text-lg">
           A Biblioteca Solidária é um espaço colaborativo para o compartilhamento de conhecimento.
-          Aqui você pode emprestar ou retirar livros de forma simples e gratuita, incentivando a leitura e o acesso à cultura para todos!
+          Aqui você pode solicitar empréstimos de livros de forma simples e gratuita, incentivando a leitura e o acesso à cultura para todos!
         </p>
       </section>
         <LivrosSection />
