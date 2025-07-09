@@ -11,11 +11,11 @@ const LivroCard = ({ livro }: LivroCardProps) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="h-48 bg-blue-100 flex items-center justify-center">
+    <div className="w-full h-60 flex items-center justify-center bg-gray-100 rounded mb-4 overflow-hidden">
         <img
           src={capa}
           alt={`Capa do livro ${livro.titulo}`}
-          className="object-cover h-full w-full"
+         className="max-h-full max-w-full object-contain"
         />
       </div>
       <div className="p-4">

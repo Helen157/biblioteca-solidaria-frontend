@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import LivrosSection from '../components/LivrosSection'
 import EmprestimosSection from '../components/EmprestimosSection'
 import Footer from '../components/Footer'
+import FormularioEmprestimo from '../components/FormularioEmprestimo'
 
 export default function Home() {
   return (
@@ -24,8 +25,9 @@ export default function Home() {
       </section>
         <LivrosSection />
         <EmprestimosSection />
-      </main>
-      <Footer />
+        <FormularioEmprestimo/>
+        </main>
+      <Footer/>
     </div>
   )
 }
