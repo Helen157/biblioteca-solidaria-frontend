@@ -8,11 +8,11 @@ Aplicação web para visualização e empréstimo de livros, promovendo o compar
 
 ## 🚀 Funcionalidades
 
-- 📖 Visualização de livros disponíveis
-- 🖼️ Capas dos livros com fallback de imagem
-- 📝 Formulário para solicitação de empréstimos
-- 📱 Layout responsivo e acessível
-- 🎨 Estilo moderno com Tailwind CSS
+- 📖 Visualização de livros disponíveis  
+- 🖼️ Capas dos livros com fallback de imagem  
+- 📝 Formulário para solicitação de empréstimos  
+- 📱 Layout responsivo e acessível  
+- 🎨 Estilo moderno com Tailwind CSS  
 
 ---
 
@@ -23,7 +23,7 @@ Aplicação web para visualização e empréstimo de livros, promovendo o compar
 - **[TypeScript](https://www.typescriptlang.org/)**  
 - **[Tailwind CSS](https://tailwindcss.com/)**  
 - **[Axios](https://axios-http.com/)**  
-- **[Node.js + Express (backend)](https://expressjs.com/)**
+- **[Node.js + Express (backend)](https://expressjs.com/)**  
 
 ---
 
@@ -33,7 +33,7 @@ Aplicação web para visualização e empréstimo de livros, promovendo o compar
 biblioteca-solidaria-frontend/
 ├── public/
 │   └── images/
-│       └── capas/
+│       ├── capas/
 │       └── imagem-biblioteca-solidaria.png
 ├── src/
 │   ├── components/
@@ -46,17 +46,21 @@ biblioteca-solidaria-frontend/
 │   │   └── api.ts
 │   ├── styles/
 │   │   └── globals.css
-│   └── types/
-│       └── livros.ts
+│   ├── types/
+│   │   └── livros.ts
 ├── pages/
 │   └── index.tsx
 ├── tailwind.config.js
 └── tsconfig.json
+```
 
-## Como executar o projeto
+---
 
+## 🧪 Como executar o projeto
+
+```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/biblioteca-solidaria-frontend.git
+git clone https://github.com/Helen157/biblioteca-solidaria-frontend.git
 
 # Acesse o diretório
 cd biblioteca-solidaria-frontend
@@ -66,25 +70,28 @@ npm install
 
 # Rode o projeto
 npm run dev
+```
 
-Certifique-se de que a API Backend esteja rodando em http://localhost:3000.
+> ⚠️ Certifique-se de que a API Backend esteja rodando em `http://localhost:3000`.
+
+---
 
 ## 📸 Imagem da aplicação
 
-![Biblioteca Solidária - Print da aplicação](./public/images/imagem-biblioteca-solidaria.png)
+<img src="./public/images/imagem-biblioteca-solidaria.png" alt="Print da Biblioteca Solidária" width="800"/>
+
+---
 
 ## 📌 Melhorias futuras
 
-🔎 Filtro de livros por gênero e autor
+- 🔎 Filtro de livros por gênero e autor  
+- 📤 Formulário para doação de livros  
+- 👩‍💼 Tela administrativa para aprovar/gerenciar empréstimos  
+- 💾 Persistência dos dados em banco de dados real (PostgreSQL)  
 
-📤 Formulário para doação de livros
-
-👩‍💼 Tela administrativa para aprovar/gerenciar empréstimos
-
-💾 Persistência dos dados em banco de dados real (PostgreSQL)
+---
 
 ## 👩‍💻 Desenvolvedora
 
-Feito por Helen Gonçalves
-Aluna no projeto Programadores do Amanhã
-
+Feito por **Helen Gonçalves**  
+Aluna no projeto **[Programadores do Amanhã](https://programadoresdoamanha.org)**
