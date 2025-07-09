@@ -94,4 +94,4 @@ npm run dev
 ## 👩‍💻 Desenvolvedora
 
 Feito por **Helen Gonçalves**  
-Aluna no projeto **[Programadores do Amanhã](https://programadoresdoamanha.org)**
+Aluna do **[Programadores do Amanhã](https://programadoresdoamanha.org)**
